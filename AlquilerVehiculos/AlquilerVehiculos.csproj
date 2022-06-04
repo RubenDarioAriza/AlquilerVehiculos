@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B72FD538-ADDD-4700-B7B3-9F76380B85AC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AlquilerVehiculos</RootNamespace>
+    <AssemblyName>AlquilerVehiculos</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAlquiladosMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlquiladosMes.Designer.cs">
+      <DependentUpon>FormAlquiladosMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormImprimir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImprimir.Designer.cs">
+      <DependentUpon>FormImprimir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReciboPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReciboPago.Designer.cs">
+      <DependentUpon>FormReciboPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarPlaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarPlaca.Designer.cs">
+      <DependentUpon>FormBuscarPlaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEliminar.Designer.cs">
+      <DependentUpon>FormEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIngresarAutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIngresarAutos.Designer.cs">
+      <DependentUpon>FormIngresarAutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIngresoPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIngresoPersonas.Designer.cs">
+      <DependentUpon>FormIngresoPersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAlquiladosMes.resx">
+      <DependentUpon>FormAlquiladosMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarPlaca.resx">
+      <DependentUpon>FormBuscarPlaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEliminar.resx">
+      <DependentUpon>FormEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImprimir.resx">
+      <DependentUpon>FormImprimir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIngresarAutos.resx">
+      <DependentUpon>FormIngresarAutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIngresoPersonas.resx">
+      <DependentUpon>FormIngresoPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReciboPago.resx">
+      <DependentUpon>FormReciboPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\posters-engranajes-fondo-del-vector.jpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Enty\Enty.csproj">
+      <Project>{8c11cee5-1c73-4e2a-9b27-a80410f38ad8}</Project>
+      <Name>Enty</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logict\Logict.csproj">
+      <Project>{79cd5c69-c10e-4b55-8e17-f886a49cbe9c}</Project>
+      <Name>Logict</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
